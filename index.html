@@ -25,9 +25,9 @@
                         colors: {
                             brand: '#4A4A4A',
                             darkText: '#1D1D1D',
-                            greyText: '#777777',
+                            grayText: '#777777',
                             blue1: '#289BDE',
-                            greyLight: '#F4FAFD',
+                            grayLight: '#F4FAFD',
                             footerColor: '#161616',
                         },
                         fontFamily: {
@@ -40,9 +40,79 @@
         <title>Hero Learner - Become Zero to Hero</title>
     </head>
     <body>
-        <h1 class="text-3xl font-bold font-poppins">
-            Hello world!
-        </h1>
+        <!-- Header -->
+        <header>
+            <!-- Navbar -->
+            <section>
+                
+                <nav class="bg-white border-gray-200 px-2 lg:px-24 sm:px-4 py-2.5">
+                    <div class="container flex flex-wrap justify-between items-center mx-auto">
+                    <a href="https://flowbite.com/" class="flex items-center">
+                        <span class="text-brand self-center text-2xl font-bold whitespace-nowrap">Hero Learner</span>
+                    </a>
+                    <div class="flex md:order-2">
+                        <!-- get started -->
+                        <button type="button" class="text-white hidden md:flex bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-transparent font-bold rounded-lg shadow-lg shadow-blue-700/30 text-sm px-5 py-2.5 text-center mr-3 md:mr-0 transition-all duration-300">
+                            Get started
+                        </button>
+
+                        <!-- collaspsible button -->
+                        <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-transparent" aria-controls="navbar-cta" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor"     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd">
+                                    
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+                            <!-- link 1 -->
+                            <li>
+                                <a href="#" class="block font-bold py-2 pr-4 pl-3 text-grayText rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-darkText md:p-0 transition-all duration-300">
+                                    Home
+                                </a>
+                            </li>
+                            
+                            <!-- link 2 -->
+                            <li>
+                                <a href="#" class="block font-bold py-2 pr-4 pl-3 text-grayText rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-darkText md:p-0 transition-all duration-300">
+                                    Courses
+                                </a>
+                            </li>
+                            <!-- link 3 -->
+                            <li>
+                                <a href="#" class="block font-bold py-2 pr-4 pl-3 text-grayText rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-darkText md:p-0 transition-all duration-300">
+                                    Deals
+                                </a>
+                            </li>
+                            <!-- link 4 -->
+                            <li>
+                                <a href="#" class="block font-bold py-2 pr-4 pl-3 text-grayText rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-darkText md:p-0 transition-all duration-300">
+                                    Success
+                                </a>
+                            </li>
+                            <!-- link 5 -->
+                            <li>
+                                <a href="#" class="block font-bold py-2 pr-4 pl-3 text-grayText rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-darkText md:p-0 transition-all duration-300">
+                                    About
+                                </a>
+                            </li>
+                            <!-- link 6 -->
+                            <li>
+                                <a href="#" class="block font-bold py-2 pr-4 pl-3 text-grayText rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-darkText md:p-0 transition-all duration-300">
+                                    Register
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+            </section>
+
+            
+        </header>
 
         <!-- flowbite js -->
         <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
