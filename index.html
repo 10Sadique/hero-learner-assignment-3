@@ -28,6 +28,7 @@
                             grayText: '#777777',
                             blue1: '#289BDE',
                             grayLight: '#F4FAFD',
+                            grayLight2: '#f4f4f4',
                             footerColor: '#161616',
                         },
                         fontFamily: {
@@ -45,7 +46,7 @@
             <!-- Navbar -->
             <section>
                 
-                <nav class="bg-white border-gray-200 px-2 lg:px-24 sm:px-4 py-2.5">
+                <nav class="bg-white border-gray-200 px-2 lg:px-24 sm:px-3 py-2.5">
                     <div class="container flex flex-wrap justify-between items-center mx-auto">
                     <a href="https://flowbite.com/" class="flex items-center">
                         <span class="text-brand self-center text-2xl font-bold whitespace-nowrap">Hero Learner</span>
@@ -111,7 +112,59 @@
                 </nav>
             </section>
 
-            
+            <!-- Carousel -->
+            <section>
+                <div id="controls-carousel" class="relative mx-5 sm:mx-10 md:mx-14 lg:mx-24 py-12" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="overflow-hidden relative h-56 rounded-lg md:h-96 text-grayLight2">
+
+                        <div class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl z-30">
+                            <div class="flex flex-col items-center justify-between">
+                                <h1 class="font-bold text-center text-base lg:text-4xl md:text-3xl sm:text-2xl mb-2 text-grayLight2">
+                                    Make Your eLearnig Great With Hero Learner
+                                </h1>
+                                <p class="text-xs lg:text-lg text-center font-thin text-grayLight2 mb-4">
+                                    Hero Learner offers high-quality courses which helped over 1.5 million students worldwide.
+                                </p>
+                                <!-- get started -->
+                                <button type="button" class="text-white md:flex bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-transparent font-bold rounded-lg shadow-lg shadow-blue-700/30 text-sm px-5 py-2.5 text-center transition-all duration-300">
+                                    Get started
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out bg-gradient-to-r from-black/70 to-black/70" data-carousel-item>
+                            
+                            <img src="images/cover/cover-1.png" class="mix-blend-overlay scale-150 sm:scale-100 md:scale-110 lg:scale-100 block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out bg-gradient-to-r from-black/70 to-black/70" data-carousel-item>
+                            <img src="images/cover/cover-2.jpg" class="mix-blend-overlay scale-150 sm:scale-100 md:scale-110 lg:scale-100 block absolute top-2/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out bg-gradient-to-r from-black/70 to-black/70" data-carousel-item>
+                            <img src="images/cover/cover-3.jpg" class="mix-blend-overlay scale-150 sm:scale-100 md:scale-110 lg:scale-100 block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev="">
+                        <span class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next="">
+                        <span class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-whitegroup-focus:outline-none">
+                            <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+
+
+            </section>
         </header>
 
         <!-- flowbite js -->
